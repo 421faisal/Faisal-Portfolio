@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Muhammad Faisal Bilal — Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <!-- Logo: replace src with your logo file if you have one -->
+    <a class="logo" href="#home">
+      <img src="assets/Minimalistic_Portfolio_Logo_with__Muhammad_Faisal_Bilal_-removebg-preview.png" alt="MF logo" class="logo-img">
+      <span class="logo-text">MF</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="actions">
+      <!-- Social icons: clickable -->
+      <a class="github" href="https://github.com/421faisal" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/muhammad-faisal-bilal-92a89931b" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a class="facebook" href="https://www.facebook.com/share/17QDCWD4yz/" target="_blank" rel="noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a class="instagram" href="https://www.instagram.com/m_faisal_balal" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+
+      <!-- Theme toggle -->
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+
+      <!-- Mobile hamburger -->
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="intro">
+        <h1>Muhammad Faisal Bilal</h1>
+        <p class="tagline">Full Stack Developer — React • Java Spring Boot</p>
+        <p class="meta">Project Manager • Team Lead at Byte Builder Society — University of Gujrat</p>
+
+        <!-- CTA: now responsive/stacks on small screens -->
+        <div class="cta">
+          <a class="btn outline" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <!-- Replace with your real portrait: assets/profile.jpg -->
+        <img src="assets/Faisal Offical .jpg" alt="Profile photo — Muhammad Faisal Bilal">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Hi — I'm Faisal</h3>
+          <p>I am a Full Stack Developer with hands-on experience building production-ready web applications using React, Next.js, Java (Spring Boot), and modern front-end stacks. I lead projects at Byte Builder Society and enjoy converting ideas into robust, user-friendly products. <strong>Location:</strong> Gujrāt, Punjab, Pakistan • <strong>University:</strong> University of Gujrat</p>
+          <p>My recent work includes building tourism platforms, marketing websites, and university management systems — focused on performance, accessibility, and clean design.</p>
+          <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="https://github.com/421faisal" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <!-- CV download link: place your CV at assets/CV_Muhammad_Faisal_Bilal.pdf -->
+            <a id="cvLink" class="btn outline" href="assets/MUHAMMAD_FAISAL_BILAL_FullStackDeveloper_CV.pdf" download><i class="fas fa-download"></i> Download CV</a>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat"><strong>3+</strong><span>Years Experience</span></div>
+          <div class="stat"><strong>Team Lead</strong><span>Byte Builder Society</span></div>
+          <div class="stat"><strong>Top Skills</strong><span>React • Java • Node</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <div class="skill-list">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>Tailwind</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <div class="skill-list">
+            <span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Express</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Databases & Tools</h3>
+          <div class="skill-list">
+            <span>MySQL</span><span>MongoDB</span><span>Firebase</span><span>Git</span><span>Docker (basic)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project">
+          <!-- replace with actual screenshot: assets/explore-pakistan.jpg -->
+          <img class="project-media-img" src="assets/ExplorePakistan.jpg" alt="Explore Pakistan screenshot">
+          <div class="project-body">
+            <h3>Explore Pakistan — Tourism Booking Platform</h3>
+            <p>A multilingual tourism platform showcasing Pakistan's northern regions. Features booking flows, galleries, performance optimizations and Firebase-based backend for reliability and scalability.</p>
+            <p class="tech">Next.js • Tailwind CSS • Firebase • Turbopack</p>
+            <div class="project-links">
+              <a href="#" class="link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project">
+          <img class="project-media-img" src="assets/The Priority Dispatch.png" alt="Priority Dispatch screenshot">
+          <div class="project-body">
+            <h3>Priority Dispatch — Truck Dispatch Marketing Site</h3>
+            <p>Conversion-focused landing site for a truck dispatching company. Responsive hero, service cards, testimonials, and accessible semantic HTML built with Next.js and Tailwind + shadcn/ui components.</p>
+            <p class="tech">Next.js • Tailwind CSS • shadcn/ui</p>
+            <div class="project-links">
+              <a href="#" class="link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project">
+          <img class="project-media-img" src="assets/1724487618708.jpg" alt="Student App screenshot">
+          <div class="project-body">
+            <h3>Student Application Management System</h3>
+            <p>University-level system to manage student requests and workflows with authentication and role-based access. Built using Java Spring Boot with MySQL and a clean templated frontend.</p>
+            <p class="tech">Java • Spring Boot • MySQL • Thymeleaf</p>
+            <div class="project-links">
+              <a href="https://github.com/421faisal" class="link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="item"><i class="fas fa-envelope"></i><div><strong>Email: </strong><span>421faisal@gmail.com</span></div></div>
+          <div class="item"><i class="fas fa-map-marker-alt"></i><div><strong>Location: </strong><span>Gujrāt, Punjab, Pakistan</span></div></div>
+          <div class="item"><i class="fas fa-university"></i><div><strong>Education: </strong><span>University of Gujrat</span></div></div>
+        </div>
+
+        <form id="contactForm" class="contact-form" aria-label="Contact form">
+          <div class="form-row">
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+            <input id="email" name="email" type="email" placeholder="Your email" required>
+          </div>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+            <!-- Button triggers same download link — anchor has download attribute -->
+            <a id="downloadCV" class="btn outline" href="assets/MUHAMMAD_FAISAL_BILAL_FullStackDeveloper_CV.pdf" download><i class="fas fa-download"></i> Download CV</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="social">
+   <a class="github" href="https://github.com/421faisal" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/in/muhammad-faisal-bilal-92a89931b" target="_blank" rel="noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a class="facebook" href="https://www.facebook.com/share/17QDCWD4yz/" target="_blank" rel="noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a class="instagram" href="https://www.instagram.com/m_faisal_balal" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+ </div>
+    <p>© 2025 Muhammad Faisal Bilal — Built with care</p>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div id="toast" class="toast" role="status" aria-live="polite">Message sent — thank you!</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
